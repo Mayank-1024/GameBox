@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.gamebox.reaction.ReactionGameController"
+      spacing="20"
+      alignment="CENTER"
+      prefWidth="800"
+      prefHeight="600"
+      stylesheets="@/com/gamebox/css/reaction.css"
+      fx:id="layout">
+
+
+
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+
+    <Label fx:id="promptLabel" text="Get ready..." styleClass="heading"/>
+    <Button fx:id="clickMeButton" text="Click Me!" styleClass="reaction-button"/>
+    <Label fx:id="resultLabel" text="" styleClass="result"/>
+    <Label fx:id="roundLabel" text="Round: 1/5" styleClass="info"/>
+    <Button fx:id="exitButton" text="❌ Exit to Menu" styleClass="exit-btn"/>
+</VBox>

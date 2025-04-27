@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="layout" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.gamebox.memoryrecall.MemoryRecallGameController"
+      alignment="CENTER" spacing="20"
+      stylesheets="@/com/gamebox/css/memoryrecall.css">
+
+
+
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <Label fx:id="emojiLabel" text="Which emoji did you see?" wrapText="true"
+       maxWidth="600" styleClass="emoji-label"/>
+    <Label fx:id="roundLabel" text="Round: 1/5" styleClass="info-label"/>
+
+    <VBox spacing="15" alignment="CENTER">
+        <HBox spacing="15" alignment="CENTER">
+            <Button fx:id="option1" prefWidth="120" prefHeight="50" />
+            <Button fx:id="option2" prefWidth="120" prefHeight="50" />
+        </HBox>
+        <HBox spacing="15" alignment="CENTER">
+            <Button fx:id="option3" prefWidth="120" prefHeight="50" />
+            <Button fx:id="option4" prefWidth="120" prefHeight="50" />
+        </HBox>
+    </VBox>
+
+    <Label fx:id="resultLabel" text="" styleClass="result-label"/>
+
+    <Button fx:id="exitButton" text="❌ Exit to Menu" styleClass="exit-button"/>
+</VBox>

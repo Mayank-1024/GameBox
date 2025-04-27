@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.gamebox.pathfinder.PathFinderController"
+            stylesheets="@/com/gamebox/css/pathfinder.css">
+
+    <top>
+        <VBox alignment="CENTER" spacing="8" BorderPane.alignment="CENTER">
+            <Label text="🧭 Path Finder Game" styleClass="heading"/>
+            <Label fx:id="moveLabel" text="Moves: 0" styleClass="info"/>
+            <Label fx:id="timerLabel" text="Time: 0s" styleClass="info"/>
+        </VBox>
+        
+
+    </top>
+
+    <center>
+        <GridPane fx:id="gridPane" alignment="CENTER" hgap="2" vgap="2" BorderPane.alignment="CENTER"/>
+    </center>
+
+    <bottom>
+        <HBox spacing="20" alignment="CENTER"  BorderPane.alignment="CENTER">
+             <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+            <Button fx:id="newGridBtn" text="🔁 New Grid" />
+            <Button fx:id="findPathBtn" text="📍 Show Path" />
+            <Button fx:id="exitButton" text="❌ Exit" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
